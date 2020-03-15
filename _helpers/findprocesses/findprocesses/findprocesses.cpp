@@ -17,9 +17,9 @@ int main()
 
     for (i = 0; i < countProcs; i++)
     {
-        if (allProcs[i] != 0)
-            
-            _tprintf(TEXT("PID: %u\n"), allProcs[i]);
+        if (allProcs[i] != 0) 
+            std::wcout << "PID: " << allProcs[i] << std::endl;
+       
     }
 
     return 0;
