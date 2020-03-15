@@ -26,6 +26,9 @@ void printProcsAndPIDs(DWORD* procs, DWORD needsCB) {
                     GetModuleBaseName(hProc, hModule, procName, sizeof(procName) / sizeof(TCHAR)); // get proc name
 
                 std::wcout << "Process : " << procName << " ( " << procs[i] << " )" << std::endl;
+
+                // Release the proc handle 
+                CloseHandle(hProc);
             }
         }
 
