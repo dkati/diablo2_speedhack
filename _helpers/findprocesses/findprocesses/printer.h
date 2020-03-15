@@ -1,2 +1,2 @@
 #pragma once
-void printPIDs(DWORD* procs, DWORD needsCB);
+void printProcsAndPIDs(DWORD* procs, DWORD needsCB);

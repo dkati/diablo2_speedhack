@@ -9,7 +9,7 @@ int main()
     if (!EnumProcesses(allProcs, sizeof(allProcs), &needsCB))
         return 1;
 
-    printPIDs(allProcs, needsCB);
+    printProcsAndPIDs(allProcs, needsCB);
 
     return 0;
 }
