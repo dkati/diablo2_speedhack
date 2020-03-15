@@ -1,1 +1,7 @@
-/procviewer/.vs
+_helpers/findprocesses/.vs
+_helpers/findprocesses/v16
+_helpers/findprocesses/x64/Debug
+_helpers/findprocesses/Debug
+_helpers/findprocesses/findprocesses/Debug
+_helpers/findprocesses/findprocesses/*.vcxproj*
+_helpers/findprocesses/findprocesses/x64
