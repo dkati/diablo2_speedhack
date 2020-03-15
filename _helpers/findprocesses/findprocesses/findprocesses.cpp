@@ -4,6 +4,7 @@
 #include <psapi.h>
 #include <string>
 #include <iostream>
+#include "printer.h"
 
 int main()
 {
@@ -15,12 +16,7 @@ int main()
 
     countProcs = needsCB / sizeof(DWORD);
 
-    for (i = 0; i < countProcs; i++)
-    {
-        if (allProcs[i] != 0) 
-            std::wcout << "PID: " << allProcs[i] << std::endl;
-       
-    }
+    printPIDs(allProcs,countProcs);
 
     return 0;
 }
