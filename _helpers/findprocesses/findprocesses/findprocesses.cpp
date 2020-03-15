@@ -4,15 +4,12 @@
 
 int main()
 {
-    DWORD allProcs[1024], needsCB, countProcs;
-    unsigned int i;
+    DWORD allProcs[1024], needsCB;
 
     if (!EnumProcesses(allProcs, sizeof(allProcs), &needsCB))
         return 1;
 
-    countProcs = needsCB / sizeof(DWORD);
-
-    printPIDs(allProcs,countProcs);
+    printPIDs(allProcs, needsCB);
 
     return 0;
 }
