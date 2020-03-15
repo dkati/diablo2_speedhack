@@ -1,9 +1,5 @@
 #include <windows.h>
-#include <stdio.h>
-#include <tchar.h>
 #include <psapi.h>
-#include <string>
-#include <iostream>
 #include "printer.h"
 
 int main()
